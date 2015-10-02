@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_margin="4dp"
+            android:id="@+id/small_brush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/small" />
+
+        <ImageButton
+            android:layout_margin="4dp"
+            android:id="@+id/medium_brush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/medium" />
+
+        <ImageButton
+            android:layout_margin="4dp"
+            android:id="@+id/large_brush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/large" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/color_palette"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/paint"
+            android:background="#000000"
+            android:tag="#000000"
+            android:onClick="paintClicked"/>
+
+        <ImageButton
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/paint"
+            android:background="#FFFF0000"
+            android:tag="#FFFF0000"
+            android:onClick="paintClicked"/>
+        <ImageButton
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/paint"
+            android:background="#FFFF6600"
+            android:tag="#FFFF6600"
+            android:onClick="paintClicked"/>
+        <ImageButton
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/paint"
+            android:background="#FFFFCC00"
+            android:tag="#FFFFCC00"
+            android:onClick="paintClicked"/>
+        <ImageButton
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/paint"
+            android:background="#FF009900"
+            android:tag="#FF009900"
+            android:onClick="paintClicked" />
+        <ImageButton
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/paint"
+            android:background="#FF009999"
+            android:tag="#FF009999"
+            android:onClick="paintClicked"/>
+        <ImageButton
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/paint"
+            android:background="#FF0000FF"
+            android:tag="#FF0000FF"
+            android:onClick="paintClicked"/>
+        <ImageButton
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/paint"
+            android:background="#FF990099"
+            android:tag="#FF990099"
+            android:onClick="paintClicked"/>
+    </LinearLayout>
+</LinearLayout>

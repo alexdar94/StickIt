@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/img_sticker_icon_temp"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentLeft="true"
+            android:padding="2.5dp"/>
+
+        <TextView
+            android:id="@+id/sticker_name_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@+id/img_sticker_icon_temp"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/sticker_price_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sticker_name_temp"
+            android:layout_toRightOf="@+id/img_sticker_icon_temp"
+            android:gravity="center"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/btn_purchase_sticker"
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:layout_alignTop="@id/img_sticker_icon_temp"
+            android:layout_alignParentRight="true"
+            android:text="Purchase" />
+
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridview_stickers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnWidth="90dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"/>
+
+</LinearLayout>

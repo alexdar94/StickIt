@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.now.stickit.EditNoteActivity"
+    android:id="@+id/edit_note_layout">
+
+    <RelativeLayout
+        android:id="@+id/edit_memo_view_parent"
+        android:layout_width="390dp"
+        android:layout_height="390dp"
+        android:layout_centerInParent="true">
+
+        <com.now.stickit.DrawingView
+            android:id="@+id/drawing"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:background="@color/primary">
+
+        <ImageButton
+            android:id="@+id/addText"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_action_add_text"
+            android:background="#00000000"
+            android:onClick="addText"/>
+
+        <ImageButton
+            android:id="@+id/draw"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_action_draw"
+            android:background="#00000000"
+            android:onClick="draw"/>
+
+        <ImageButton
+            android:id="@+id/erase"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_action_erase"
+            android:background="#00000000"
+            android:onClick="erase"/>
+
+        <ImageButton
+            android:id="@+id/addImage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_action_add_image"
+            android:background="#00000000"
+            android:onClick="addImage"/>
+
+        <ImageButton
+            android:id="@+id/undo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_action_undo"
+            android:background="#00000000"
+            android:onClick="undo"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

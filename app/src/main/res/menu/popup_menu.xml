@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add_gallery" android:icon="@drawable/ic_action_gallery_image" android:title="Gallery"/>
+    <item android:id="@+id/add_sticker" android:icon="@drawable/ic_action_sticker_image" android:title="Sticker"/>
+    <item android:id="@+id/capture" android:icon="@drawable/ic_action_capture_image" android:title="Capture"/>
+</menu>

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.now.stickit.ShopActivity">
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" android:showAsAction="never" />
+
+    <item android:id="@+id/action_add_coin"
+        android:icon="@drawable/ic_action_add_coin"
+        android:title="@string/title_activity_coin"
+        android:showAsAction="always"/>
+
+</menu>
